@@ -1,0 +1,47 @@
+@import '../../../less/variables.less';
+@import '../../../less/responsive.less';
+
+.benefit {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 8px;
+  align-items: center;
+
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: @white;
+}
+
+@media (max-width: @desktop) {
+  .benefit {
+    grid-gap: 8px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: @laptop) {
+  .benefit {
+    grid-gap: 6px;
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: @tablet) {
+  .benefit {
+    grid-gap: 5px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
+
+@media (max-width: @mobile) {
+  .benefit {
+    grid-gap: 4px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+}

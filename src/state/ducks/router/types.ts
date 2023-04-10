@@ -1,0 +1,10 @@
+const prefix = 'ROUTER_';
+
+export default {
+  GO_BACK: `${prefix}GO_BACK`,
+  ACCOUNT_ENTERED: `${prefix}ACCOUNT_ENTERED`,
+  NAVIGATE_TO_AUTH: `${prefix}NAVIGATE_TO_AUTH`,
+  NAVIGATE_TO_MAIN: `${prefix}NAVIGATE_TO_MAIN `,
+  NAVIGATE_TO_CHANGE_PASSWORD: `${prefix}NAVIGATE_TO_CHANGE_PASSWORD`,
+  MAIN_ENTERED: `${prefix}MAIN_ENTERED`,
+};

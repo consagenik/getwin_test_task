@@ -1,0 +1,37 @@
+@import '../../../less/responsive.less';
+
+.benefitsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 24px;
+}
+
+@media (max-width: @desktop) {
+  .benefitsList {
+    grid-gap: 20px;
+  }
+}
+
+@media (max-width: @laptop) {
+  .benefitsList {
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+  }
+}
+
+@media (max-width: @tablet) {
+  .benefitsList {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 12px;
+  }
+}
+
+@media (max-width: @mobile) {
+  .benefitsList {
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
+  }
+}

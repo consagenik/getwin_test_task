@@ -1,0 +1,51 @@
+@import '../../../less/variables.less';
+@import '../../../less/responsive.less';
+
+.submitButtonWrapper {
+  .submitButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 0 24px;
+    background: @primary;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: @white;
+
+    &.disabled {
+      color: @field-placeholder;
+      background-color: @field-disabled-background;
+    }
+  }
+}
+
+@media (max-width: @laptop) {
+  .submitButtonWrapper {
+    .submitButton {
+      height: 36px;
+      border-radius: 18px;
+      padding: 0 20px;
+  
+      font-size: 11px;
+    }
+  }
+}
+
+@media (max-width: @tablet) {
+  .submitButtonWrapper {
+    .submitButton {
+      height: 32px;
+      border-radius: 16px;
+      padding: 0 16px;
+  
+      font-size: 10px;
+    }
+  }
+}
+

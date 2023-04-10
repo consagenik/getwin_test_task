@@ -1,0 +1,40 @@
+.benefit {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 8px;
+  align-items: center;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+@media (max-width: 1366px) {
+  .benefit {
+    grid-gap: 8px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .benefit {
+    grid-gap: 6px;
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .benefit {
+    grid-gap: 5px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
+@media (max-width: 500px) {
+  .benefit {
+    grid-gap: 4px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
+/*# sourceMappingURL=Benefit.css.map */

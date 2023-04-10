@@ -1,0 +1,54 @@
+@import '../../../less/variables.less';
+@import '../../../less/responsive.less';
+
+.customButtonWrapper {
+  .customButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    background-color: @white;
+    padding: 8px 0px;
+
+    border: 1px solid @custom-button-border-color;
+    border-radius: 8px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: @black;
+
+    &.disabled {
+      color: @field-placeholder;
+      background-color: @field-disabled-background;
+    }
+  }
+}
+
+@media (max-width: @laptop) {
+  .customButtonWrapper {
+    .customButton {
+      height: 36px;
+      padding: 6px 0px;
+      border-radius: 6px;
+  
+      font-size: 11px;
+      line-height: 14px;
+    }
+  }
+}
+
+@media (max-width: @tablet) {
+  .customButtonWrapper {
+    .customButton {
+      height: 32px;
+      padding: 5px 0px;
+      border-radius: 5px;
+  
+      font-size: 10px;
+      line-height: 13px;
+    }
+  }
+}

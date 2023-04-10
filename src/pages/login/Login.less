@@ -1,0 +1,90 @@
+@import '../../less/variables.less';
+@import '../../less/responsive.less';
+
+.contentWrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 600px 1fr;
+  min-height: 100vh;
+
+  .descriptionWrapper {
+    position: relative;
+    height: 100%;
+    padding: 92px 64px;
+    box-sizing: border-box;
+
+    background-image: url("../../assets/images/AuthDescriptionImage.png"), linear-gradient(180deg, @secondary 0%, @primary 18.75%);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .formSection {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 92px 64px;
+    box-sizing: border-box;
+
+    .formColumn {
+      width: 332px;
+    }
+  }
+
+  .selectWrapper {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    z-index: 100;
+  }
+}
+
+@media (max-width: @desktop) {
+  .contentWrapper {
+    grid-template-columns: 500px 1fr;
+
+    .descriptionWrapper,
+    .formSection {
+      padding: 69px 48px;
+    }
+  }
+}
+
+@media (max-width: @laptop) {
+  .contentWrapper {
+    grid-template-columns: 320px 1fr;
+
+    .descriptionWrapper,
+    .formSection {
+      padding: 46px 32px;
+    }
+
+    .descriptionWrapper {
+      background-image: linear-gradient(180deg, @secondary 0%, @primary 18.75%);
+    }
+  }
+}
+
+@media (max-width: @tablet) {
+  .contentWrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+
+    .descriptionWrapper,
+    .formSection {
+      padding: 23px 16px;
+      height: auto;
+    }
+
+    .formSection {
+      .formColumn {
+        width: 260px;
+      }
+    }
+
+    .selectWrapper {
+      top: 16px;
+      right: 16px;
+    }
+  }
+}

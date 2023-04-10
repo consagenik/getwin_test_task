@@ -1,0 +1,9 @@
+export {default as TickSquare} from './TickSquare.svg';
+export {default as AuthDescriptionImage} from './AuthDescriptionImage.png';
+export {default as GoogleIcon} from './google.svg';
+export {default as FacebookIcon} from './facebook.svg';
+export {default as LinkedInIcon} from './linkedin.svg';
+export {default as PasswordVisibleIcon} from './PasswordVisibleIcon.svg';
+export {default as PasswordInvisibleIcon} from './PasswordInvisibleIcon.svg';
+export {default as ErrorMessageIcon} from './ErrorMessageIcon.svg';
+export {default as ArrowDownIcon} from './ArrowDownIcon.svg';

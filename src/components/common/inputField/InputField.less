@@ -1,0 +1,150 @@
+@import '../../../less/variables.less';
+@import '../../../less/responsive.less';
+
+.inputField {
+  label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 24px;
+    color: @black;
+  }
+  
+  .inputWrap {
+    display: flex;
+    align-items: center;
+    
+    .inputContainer {
+      flex-grow: 1;
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  
+    .inputField {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      padding: 0 8px 0 16px;
+      height: 40px;
+      background: @white;
+      border: 1px solid @field-border;
+      border-radius: 4px;
+      box-sizing: border-box;
+
+      &.inputFieldActive {
+        border: 1px solid @primary-dark;
+      }
+
+      &.inputFieldFilled {
+        border: 2px solid @field-border-filled;
+        padding: 0 7px 0 15px;
+      }
+      
+      &.disabled {
+        background-color: @field-disabled-background;
+      }
+
+      .field {
+        padding: 0;
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        box-inner-end-width: 0;
+
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 24px;
+        color: @black;
+
+        &::placeholder {
+          font-family: 'Montserrat';
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 24px;
+          color: @field-placeholder;
+        }
+      }
+
+      .fieldButtons {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+    }
+    
+    .childrenContainer {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@media (max-width: @desktop) {
+  .inputField {
+    label {
+      line-height: 22px;
+    }
+    
+    .inputWrap {
+      .inputField {
+        .field {
+          line-height: 22px;
+
+          &::placeholder {
+            line-height: 22px;
+          }
+        }
+      }
+      
+      .childrenContainer {
+        margin-bottom: 22px;
+      }
+    }
+  }
+}
+
+@media (max-width: @laptop) {
+  .inputField {
+    label {
+      font-size: 11px;
+      line-height: 20px;
+    }
+    
+    .inputWrap {
+      .inputField {
+        padding: 0 6px 0 12px;
+        height: 36px;
+
+        &.inputFieldFilled {
+          padding: 0 5px 0 11px;
+        }
+
+        .field {
+          font-size: 11px;
+          line-height: 20px;
+
+          &::placeholder {
+            font-size: 11px;
+            line-height: 20px;
+          }
+        }
+      }
+      
+      .childrenContainer {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: @tablet) {
+  .inputField {
+    .inputWrap {
+      .childrenContainer {
+        margin-bottom: 18px;
+      }
+    }
+  }
+}

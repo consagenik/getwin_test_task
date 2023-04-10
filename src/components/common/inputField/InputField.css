@@ -1,0 +1,110 @@
+.inputField label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  color: #20272E;
+}
+.inputField .inputWrap {
+  display: flex;
+  align-items: center;
+}
+.inputField .inputWrap .inputContainer {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.inputField .inputWrap .inputField {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 0 8px 0 16px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #CBD5E2;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.inputField .inputWrap .inputField.inputFieldActive {
+  border: 1px solid #4E5AF2;
+}
+.inputField .inputWrap .inputField.inputFieldFilled {
+  border: 2px solid #3843ED;
+  padding: 0 7px 0 15px;
+}
+.inputField .inputWrap .inputField.disabled {
+  background-color: #DCDEFC;
+}
+.inputField .inputWrap .inputField .field {
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  box-inner-end-width: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  color: #20272E;
+}
+.inputField .inputWrap .inputField .field::placeholder {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #8D97B0;
+}
+.inputField .inputWrap .inputField .fieldButtons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.inputField .inputWrap .childrenContainer {
+  margin-bottom: 24px;
+}
+@media (max-width: 1366px) {
+  .inputField label {
+    line-height: 22px;
+  }
+  .inputField .inputWrap .inputField .field {
+    line-height: 22px;
+  }
+  .inputField .inputWrap .inputField .field::placeholder {
+    line-height: 22px;
+  }
+  .inputField .inputWrap .childrenContainer {
+    margin-bottom: 22px;
+  }
+}
+@media (max-width: 1024px) {
+  .inputField label {
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .inputField .inputWrap .inputField {
+    padding: 0 6px 0 12px;
+    height: 36px;
+  }
+  .inputField .inputWrap .inputField.inputFieldFilled {
+    padding: 0 5px 0 11px;
+  }
+  .inputField .inputWrap .inputField .field {
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .inputField .inputWrap .inputField .field::placeholder {
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .inputField .inputWrap .childrenContainer {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .inputField .inputWrap .childrenContainer {
+    margin-bottom: 18px;
+  }
+}
+/*# sourceMappingURL=InputField.css.map */

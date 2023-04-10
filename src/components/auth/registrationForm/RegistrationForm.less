@@ -1,0 +1,51 @@
+@import '../../../less/variables.less';
+@import '../../../less/responsive.less';
+
+.registrationFormWrapper {
+  display: grid;
+  grid-gap: 32px;
+  
+  .ant-divider-inner-text {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: @field-placeholder;
+  }
+
+  .socialNetworkButtons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 12px;
+  }
+}
+
+@media (max-width: @tablet) {
+  .registrationFormWrapper {
+    grid-gap: 24px;
+    
+    .ant-divider-inner-text {
+      font-size: 11px;
+      line-height: 20px;
+    }
+  
+    .socialNetworkButtons {
+      grid-gap: 10px;
+    }
+  }
+}
+
+@media (max-width: @mobile) {
+  .registrationFormWrapper {
+    grid-gap: 20px;
+    
+    .ant-divider-inner-text {
+      font-size: 10px;
+      line-height: 16px;
+    }
+  
+    .socialNetworkButtons {
+      grid-gap: 8px;
+    }
+  }
+}

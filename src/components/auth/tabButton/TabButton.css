@@ -1,0 +1,14 @@
+.tabButton {
+  width: 160px;
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+}
+.tabButton.default {
+  color: #6D7895;
+}
+/*# sourceMappingURL=TabButton.css.map */
